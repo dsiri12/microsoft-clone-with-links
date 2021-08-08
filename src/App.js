@@ -8,6 +8,9 @@ import Xbox from './pages/Xbox'
 import Deals from './pages/Deals'
 import Support from './pages/Support'
 
+import Products from './pages/Products'
+import ProductDetail from './pages/ProductDetail'
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -38,6 +41,14 @@ const App = () => {
 
         <Route path="/support">
           <Support />
+        </Route>
+
+        <Route path="/products/:id">
+          <ProductDetail />
+        </Route>
+
+        <Route path="/products">
+          <Products />
         </Route>
       </Switch>
     </BrowserRouter>

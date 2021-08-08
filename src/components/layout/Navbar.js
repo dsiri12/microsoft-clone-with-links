@@ -1,32 +1,46 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className="main-nav">
-      <img
-        src="https://i.ibb.co/wwLhz98/logo.png"
-        alt="Microsoft"
-        className="logo"
-      />
+      <NavLink to="/">
+        <img
+          src="https://i.ibb.co/wwLhz98/logo.png"
+          alt="Microsoft"
+          className="logo"
+        />
+      </NavLink>
 
       <ul className="main-menu">
         <li>
-          <a href="#">Office</a>
+          <NavLink to="/office" activeClassName="selected">
+            Office
+          </NavLink>
         </li>
         <li>
-          <a href="#">Windows</a>
+          <NavLink to="/windows" activeClassName="selected">
+            Windows
+          </NavLink>
         </li>
         <li>
-          <a href="#">Surface</a>
+          <NavLink to="/surface" activeClassName="selected">
+            Surface
+          </NavLink>
         </li>
         <li>
-          <a href="#">Xbox</a>
+          <NavLink to="/xbox" activeClassName="selected">
+            Xbox
+          </NavLink>
         </li>
         <li>
-          <a href="#">Deals</a>
+          <NavLink to="/deals" activeClassName="selected">
+            Deals
+          </NavLink>
         </li>
         <li>
-          <a href="#">Support</a>
+          <NavLink to="/support" activeClassName="selected">
+            Support
+          </NavLink>
         </li>
       </ul>
 

@@ -12,3 +12,5 @@ const ProductDetail = () => {
 }
 
 export default ProductDetail
+
+// https://reactrouter.com/web/api/Hooks/useparams
